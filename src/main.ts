@@ -1,15 +1,15 @@
 import { Component } from '@angular/core';
 import { bootstrapApplication } from '@angular/platform-browser';
 import 'zone.js';
+import { SimpleChartComponent } from './app/simple-chart/simple-chart.component';
 
 @Component({
   selector: 'app-root',
+  imports:[SimpleChartComponent],
   standalone: true,
   template: `
-    <h1>Hello from {{ name }}!</h1>
-    <a target="_blank" href="https://angular.dev/overview">
-      Learn more about Angular
-    </a>
+ <h2>Chart</h2>
+ <app-simple-chart></app-simple-chart>
   `,
 })
 export class App {
